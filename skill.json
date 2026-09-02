@@ -1,0 +1,36 @@
+{
+  "name": "genpark-multi-file-git-workspace-dependency-diff-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-file git workspace dependency diff synthesizer analyzing import graphs to construct topological file edit sequences.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "developer-tooling",
+  "tags": [
+    "workspace-diff",
+    "git-patch",
+    "replit-agent",
+    "cursor-composer",
+    "multi-file-refactor"
+  ],
+  "inputs": {
+    "feature_intent": {
+      "type": "string"
+    },
+    "workspace_tree_snapshot": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "refactor_plan_id": {
+      "type": "string"
+    },
+    "ordered_file_mutation_sequence": {
+      "type": "array"
+    },
+    "unified_diff_patch_manifest_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
